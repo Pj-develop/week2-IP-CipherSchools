@@ -1,0 +1,94 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<title>Pseudo Elements</title>
+ 	<link rel="stylesheet" type="text/css" href="style.css"> 
+<style>
+
+p{
+    color: black;
+    font-size: 26px;
+    font-size: 36px;
+}
+
+a{
+    color: red;
+
+}
+a:link{
+    color: yellow;
+}
+a:hover{
+    color: blueviolet;
+    background: hotpink;
+}
+a:active{
+    color: orangered;
+}
+a:focus{
+    border: 10px solid black;
+}
+a:visited{
+    color: white;
+}
+p::after{
+    content: "this is Para";
+}
+
+p::before{
+    content: "this is BEFORE Para";
+}
+
+p::first-line{
+    color: hotpink;
+}
+p::first-letter{
+    color: blueviolet;
+}
+p::selection{
+    color: orangered;
+}
+li::marker{
+    color: orangered;
+}
+input[type="text"]::placeholder{
+    color: red;
+    background-color: blue;
+}
+</style>
+
+ </head>
+ <body>
+ <header>
+ <div class="container">
+    <article>
+       Welcome to the Bootcamp, Lets have fun and learn CSS & HTML 
+    </article>
+    <a>CLICK NOT HERE</a>
+    <a href="#">CLICK HERE</a>
+    <a href="#">CLICK HERE</a>
+    <a href="#">CLICK HERE</a>
+    <a href="#">CLICK HERE</a>
+    <a href="#">CLICK HERE</a>
+    <a >CLICK HERE</a>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <ul>
+        <li>HELLO</li>
+        <li>CIPHERS</li>
+    </ul>
+</div>
+    <label>NAME: </label><input type='text' placeholder="ENTER YOUR NAME"></input>
+</header>
+
+
+ </body>
+ </html>

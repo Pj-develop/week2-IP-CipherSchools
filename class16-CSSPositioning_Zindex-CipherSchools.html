@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<title>CSS Positioning and z-index</title>
+ 	<!-- <link rel="stylesheet" type="text/css" href="style.css">  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+<style>
+
+div{
+    background: lightblue;
+    padding: 10px;
+    margin: 10px;
+    width: 60px;
+}
+
+.static{
+    position:static;
+}
+.relative{
+    position: relative;
+    top:10px;
+    right: -130px;
+    background: purple;
+    z-index: 100;
+    color: white;
+}
+.absolute{
+    position: absolute;
+    bottom: 20%;
+    right: 5%;
+    z-index: 100;#for postion over one another
+}
+.fixed{
+    position: fixed;
+    top: 80px;
+    right: 20px;
+
+}
+.sticky{
+    position: sticky;
+    top: 30%;
+}
+
+
+
+</style>
+
+ </head>
+ <body>
+ <header>
+<div class="relative"><p>Relative</p></div>
+<div class="absolute"><p>Absoluite</p></div>
+<div class="fixed"><p>Fixed</p></div>
+<div class="sticky"><p>Stciky</p></div>
+<div class="static"><p>Static</p></div>
+
+</header>
+
+
+ </body>
+ </html>

@@ -1,0 +1,72 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<title>CSSS BOX MODEL</title>
+ 	<link rel="stylesheet" type="text/css" href="style.css"> 
+<style>
+
+p{
+    color: black;
+    font-size: 26px;
+    font-size: 36px;
+}
+
+
+.box span{
+    display: block;
+    background-color: darkcyan;
+
+}
+.box {
+    display: block;
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    /*same all side*/
+    padding:10px ;
+    /*Top Bottom & right left*/
+    padding:20px 50px  ;
+    /*Top & right left & BOTTOM*/
+    padding:20px 10px 50px ;
+    /*Top RIGHT Bottom left*/
+    padding:20px 50px 10px 50px ;
+    /*Top Bottom right left*/
+    padding:20px 50px 10px 50px ;
+    /*border box*/
+    border-width: 2px;
+    border-style: solid;
+    border-color: cyan;
+    border: 2px solid red;
+    /*MArgin box : around the box*/
+    /*Top Bottom right left*/
+    margin: 20px 100px 20px 30px;
+        /*margin -minus*/
+    margin: -10px;
+    margin: auto;
+    margin: auto auto;
+
+
+
+
+
+
+}
+</style>
+
+ </head>
+ <body>
+ <header>
+    <div class="box">
+        <div>Welcome to the Class 12</div>
+        <div>Welcome to the Class 12</div>
+        This is 2nd Paragraph
+        <span>This is 3rd Paragraph</span>
+
+    </div>
+</header>
+
+
+ </body>
+ </html>

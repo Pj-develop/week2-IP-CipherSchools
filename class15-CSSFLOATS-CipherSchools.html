@@ -1,0 +1,74 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<title>CSS Floats </title>
+ 	<link rel="stylesheet" type="text/css" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    color: black;
+    font-size: 26px;
+    font-size: 36px;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    font: italic normal bold 16px/1.5 "Inter",sans-serif ;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.container{
+    width: 500px;
+    height: 700px;
+    margin: auto;
+    border: 1px solid black;
+    padding: 5px;
+    overflow: auto;
+}
+.container img{
+    float: left;
+}
+.container .para{
+    clear: both;
+}
+p{
+    float: left;
+}
+
+
+
+</style>
+
+ </head>
+ <body>
+ <header>
+    <div class="accordian">
+        <div class="panel">
+            <input type='radio' name='one-panel' id='one-panel'>
+            <label for='one-panel'>Accordian One</label>
+            <div class="container">
+            <img src="plant.jpg" alt="pic2" width="250px" height="300px">
+                <p>
+                    A paragraph is series of repeatrd setance which is arrnaged in corordinative
+                    maneer so that it results in meaningful way and has a proper meaning to it.
+                    I am learning CSS and my teacher is Anurag Mishra and i found him great teacher.
+                </p>
+            </div>
+        </div>
+        
+    </div>
+</header>
+
+
+ </body>
+ </html>

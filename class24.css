@@ -1,0 +1,51 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #f52e5d;
+    --secondary-color: #fff;
+    --big-font: 40px;
+    --small-font: 20px;
+}
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px;
+    font-size: var(--small-font);
+}
+
+
+article{
+    height: 50vh;
+    background: url('img2.jpeg')I no-repeat  center center / cover;
+    color: white;
+    box-shadow: insert 1000px 0px rgba(0,0,0,0.4);
+    text-align: center;
+    padding: 35px 20px;
+    clip-path: polygon(
+        0% 0%,
+        100% 0%,
+        100% 75%,
+        75% 75%,
+        75% 100%,
+        50% 75%,
+        0% 75%
+    );
+}
+
+article h1,article p {
+    width:50%;
+    margin: auto;
+
+}
+Footer

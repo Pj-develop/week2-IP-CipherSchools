@@ -1,0 +1,105 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<title>Accordion Panel using CSS</title>
+ 	<link rel="stylesheet" type="text/css" href="style.css"> 
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    color: black;
+    font-size: 26px;
+    font-size: 36px;
+}
+
+
+.accordian{
+    margin: 20px;
+}
+.accordian .panel{
+    padding: 20px;
+    border: 1px solid red;
+}
+.accordian .panel label{
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    font-weight: bold;
+
+}
+.accordian .panel label::before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: -4px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent ;
+    border-bottom: 8px solid transparent;
+    border-left: 12px solid black;
+
+}
+
+.accordian .panel .box{
+    display: none;
+
+}
+
+.accordian .panel input:checked ~ label{
+    color: purple;
+}
+.accordian .panel input:checked ~ label::before{
+    transform: rotate(90deg);
+}
+
+.accordian .panel input:checked ~ .box{
+   display: block;
+   padding: 0 20px 10px 20px;
+}
+
+.accordian .panel input{
+    display: none;
+}
+</style>
+
+ </head>
+ <body>
+ <header>
+    <div class="accordian">
+        <div class="panel">
+            <input type='radio' name='one-panel' id='one-panel'>
+            <label for='one-panel'>Accordian One</label>
+            <div class="box">
+                <p>
+                    A paragraph is series of repeatrd setance which is arrnaged in corordinative
+                    maneer so that it results in meaningful way and has a proper meaning to it.
+                    I am learning CSS and my teacher is Anurag Mishra and i found him great teacher.
+                </p>
+            </div>
+        </div>
+
+        <div class="panel">
+            <input type='radio' name='two-panel' id='two-panel'>
+            <label for='two-panel'>Accordian Two</label>
+            <div class="box">
+                <p>
+                    A paragraph is series of repeatrd setance which is arrnaged in corordinative
+                    maneer so that it results in meaningful way and has a proper meaning to it.
+                    I am learning CSS and my teacher is Anurag Mishra and i found him great teacher.
+                </p>
+            </div>
+        </div>
+        
+    </div>
+</header>
+
+
+ </body>
+ </html>
